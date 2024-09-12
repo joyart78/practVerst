@@ -378,6 +378,13 @@ a{
     border-radius: 4px;
     width: 240px;
     height: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Gilroy-SemiBold';
+    gap: 8px;
 }
 .footer_copyright{
     border-top: solid 1px #595667;
@@ -431,9 +438,206 @@ a{
 
 @media (max-width: 400px) {
     .container{
-        max-width: 360px;
+        max-width: 328px;
+        /*background-color: red;*/
     }
-    .header_menu, menu{
+    .header{
+        margin-bottom: 24px;
+    }
+    .header_container{
+        height: 64px;
+    }
+    .header_menu, menu, .header_form{
         display: none;
+    }
+    .menu_option{
+        display: block;
+    }
+    .logo{
+        width: 124px;
+        height: 32px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_h1{
+        max-width: 328px;
+    }
+    .main_h1_big{
+        font-size: 40px;
+    }
+    .main_h1_reg{
+        font-size: 14px;
+    }
+    .main_story{
+        max-width: 328px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+
+    }
+    .main_story_gallery{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .main_story_img{
+        width: 328px;
+        height: 200px;
+
+    }
+    .main_story_text{
+        margin: 0;
+        padding: 16px;
+        gap:16px;
+    }
+    .main_story_year{
+        font-size: 20px;
+    }
+    .main_story_p{
+        font-size: 14px;
+    }
+    .main_work{
+        max-width: 328px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 24px;
+    }
+    .main_work_img{
+        height: 200px;
+        width: 100%;
+    }
+    .main_work_text{
+        gap: 24px;
+    }
+    .main_work_text h1{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .main_work_product-text h2{
+        font-size: 16px;
+    }
+    .main_work_product-text p{
+        font-size: 14px;
+    }
+    .main_team{
+        max-width: 328px;
+        margin-bottom: 40px;
+    }
+    .main_team_workers{
+        display: grid;
+        grid-template-columns: 156px 156px;
+        column-gap: 16px;
+        row-gap: 16px;
+        margin: 0;
+    }
+    .main_team_img{
+        width: 156px;
+        height: 200px;
+    }
+    .team_img{
+        width: 156px;
+        height: 200px;
+    }
+    .main_team_fio{
+        font-size: 16px;
+    }
+    .main_team_job-title{
+        font-size: 14px;
+    }
+    .main_team_text{
+        margin-top: 8px;
+        gap: 4px;
+    }
+    .main_team_h2{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .main_form{
+        background-color: white;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .main_form_sign-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .text-field{
+        width: 100%;
+        align-items: flex-start;
+        padding: 12px 180px 12px 28px;
+    }
+    .default_btn{
+        width: 328px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form_small{
+        font-size: 18px;
+    }
+    .form_big{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .main_form_text{
+        padding: 16px;
+    }
+    .footer_information{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer_content{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 16px;
+    }
+    .footer_copyright{
+        text-align: center;
+        font-size: 12px;
+    }
+    .footer_navigation h2{
+        font-size: 16px;
+    }
+    .footer_navigation{
+        gap: 8px;
+    }
+    .content_item{
+        font-size: 14px;
+    }
+    .services{
+        margin: 0;
+    }
+    .footer_get-start p{
+        width: 328px;
+        font-size: 14px;
+    }
+    .footer_start{
+        gap: 16px;
+        margin: 0;
+    }
+    .footer_get-start{
+        gap: 16px;
+    }
+    .footer_button{
+        width: 170px;
+        height: 48px;
     }
 }
